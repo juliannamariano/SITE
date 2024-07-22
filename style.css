@@ -1,0 +1,124 @@
+/* Importação das fontes do google fontes  */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Criando variáveis com root que é uma pseudoclasse para ser adicionada na página html inteira */
+:root{
+    --cor-primaria: black; 
+    --cor-secundaria:white;
+    --cor-terciaria:#DEB887; 
+}
+
+/* Asterisco para pegar todos os elementos do site */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Definindo que a página ocupe 100% do espaço - vh -> viewport */
+    /* height: 100vh; */
+    /*  fazendo com que ops elementos respeitem a hierarquia dos elementos. Ex: body é maior q h1 pois nesse código vem primeiro */
+    box-sizing: border-box;
+    background-color: var(--cor-secundaria);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7% 10%;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo__destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: Krona One;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 24px;
+    font-family: Montserrat;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: Krona One;
+    font-weight: 400px;
+    font-size: 24px;
+}
+
+.apresentacao__links__link {
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.apresentacao__links__link:hover{
+    background-color:var(--cor-terciaria);
+    color: var(--cor-primaria);
+    
+}
+
+
+
+img {
+    border-radius: 20px;
+  
+}
+
+.rodape{
+    width: 1920px;
+    height: 80px;
+    background-color: var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+    padding: 2% 0% 0% 10%;
+
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600px;
+    font-size: 24px;
+    text-decoration: none;
+    color:var(--cor-terciaria);
+}
+
+
+
